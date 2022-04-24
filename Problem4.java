@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 class Problem4
 {
-    static Scanner sc=new Scanner(System.in);
+    	static Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) 
 	{
 		boolean orderBreaked;
@@ -36,13 +36,13 @@ class Problem4
 	}
 
 	static int[] convert(String string) {
-    String[] partition = string.replace(",",", ").replace("[", "").replace("]", "").split(", ");
-    int result[] = new int[partition.length],next=0;
+	    String[] partition = string.replace(",",", ").replace("[", "").replace("]", "").split(", ");
+	    int result[] = new int[partition.length],next=0;
 
-    for (String part : partition) {                         //Conversion into Array
-        try { result[next++] = Integer.parseInt(part); } 
-        catch (NumberFormatException e) {   e.printStackTrace();    }
-    }
-    return result;
-  }
+	    for (String part : partition) {                         //Conversion into Array
+		try { result[next++] = Integer.parseInt(part); } 
+		catch (NumberFormatException e) {   e.printStackTrace();    }
+	    }
+	    return result;
+  	}
 }
